@@ -1,0 +1,181 @@
+html {
+    --primary-color-1: #bf5e0a;
+    --primary-color-2: #732a19;
+    --primary-color-3: #16398c;
+
+    /* secondary colors */
+
+    --secondary-color-1: #5a98bf;
+    --secondary-color-2: #8c6746;
+
+    /* pad and gap variables */
+
+    --pad-and-gap: 1em;
+
+    /* fonts */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+    border:none;
+}
+
+.red-text{
+    color: red;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.seeMore{
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header  {
+    /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)),url("https://raw.githubusercontent.com/danicota/ecomm-store-project/master/img/nuts-73914_1920.jpg"); */
+    background-blend-mode: gray;
+    background-size: cover;
+    text-align: center;
+}
+
+.navLink:link{
+    color:white;
+}
+
+a:link {
+    color: black;
+}
+
+.rating-radios {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 300px 0px 300px;
+    background-color: var(--primary-color-3);
+    position: static;   
+    bottom: 0px;
+
+}
+
+.menu-link{
+    color: #a1beca;
+    cursor: pointer;
+}
+
+.menu-li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.your-products {
+    display: flex;
+}
+
+.top-container {
+    display: flex;
+    position: relative;
+    top: -290px;
+    flex-direction: row-reverse;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    margin: calc(var(--pad-and-gap) / 2)
+}
+
+.social,
+.legal {
+    display: flex;
+    justify-content: flex-end;
+    margin: calc(var(--pad-and-gap) / 2)
+}
+
+.copyright {
+    text-align: right;
+}
+
+.logo-img {
+    max-width: 20%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.navigation {
+    position: relative;
+    bottom: -77px;
+}
+
+.product {
+    /*width: 50%;*/
+    display: flex;
+    flex-direction: column;
+    font-style: inherit;
+    grid-gap: 2em;
+    padding: 1em;
+
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #f2f5ff;
+justify-content: center;
+padding: 15px;
+grid-gap: var(--pad-and-gap)
+}
+
+/*.grid-container {display: grid;}*/
+
+    @media screen and (min-width: 40em)  {
+    .products {
+
+     grid-template-columns: 15em auto;
+     grid-gap: 2 em;
+    }
+    
+    .grid-container {
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 2em;
+     padding: 2em;
+     }
+    }
+    
+    @media screen and (min-width: 70em) {
+     .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+     }
+    
+    }
