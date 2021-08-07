@@ -31,14 +31,11 @@ const ProductItem = (props) => {
           <div style={{ marginTop: "10px" }}> {stars()} </div>
         </dl>
 
-        <div class="seeMore">
-          <div>See more</div>
-        </div>
       </header>
       <form>
         <fieldset>
           <legend>Sizes</legend>
-          <ol>{mappedInputs}</ol>
+          <ol className="product-sizes">{mappedInputs}</ol>
         </fieldset>
       </form>
       <footer>

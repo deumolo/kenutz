@@ -9,7 +9,7 @@ const WeightList = (props) => {
     <fieldset>
       <legend>Sizes</legend>
 
-      <ol class="filter-list">
+      <ol class="">
         <li>
           <input
             onChange={changeFilteHandler}

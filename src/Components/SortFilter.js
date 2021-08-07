@@ -8,7 +8,7 @@ const SortFilter = (props) => {
   return (
     <fieldset>
       <label for="sort">Show</label>
-      <select onChange={changeSortHandler} name="sort" id="sort">
+      <select style={{marginLeft:"10px"}} onChange={changeSortHandler} name="sort" id="sort">
         <option value="price-high">Price, highest to lowest</option>
         <option value="price-low">Price, lowest to highest</option>
         <option value="name-high">Name, highest to lowest</option>

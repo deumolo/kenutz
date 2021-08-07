@@ -16,7 +16,31 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ol{
+    padding:0;
+}
+
+.paginationItems{
+    cursor: pointer;
+}
+
+.product-sizes li{
+    display: inline;
+    margin-right: 5px;
+}
+
+.filter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
 fieldset{
+    padding: 0;
     border:none;
 }
 

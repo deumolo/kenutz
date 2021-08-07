@@ -255,6 +255,7 @@ function Shop() {
     for (let index = 0; index < numberOfPages; index++) {
       pages.push(
         <li
+        className="paginationItems"
           style={{ marginLeft: "10px", display: "inline" }}
           onClick={() => paginationHandler(index)}
         >
@@ -267,45 +268,24 @@ function Shop() {
 
   return (
     <React.Fragment>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      />
-      <link
-        rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossOrigin="anonymous"
-      />
 
-      <header className="page-header">
-        <img
-          style={{ maxWidth: "100px", marginTop: "40px" }}
-          className="logo-img"
-          src="https://raw.githubusercontent.com/danicota/ecomm-store-project/ec8a2e517475a1ac264cf06680c8387e3e8f7437/img/Asset%201.svg"
-          alt="kenutz"
-        />
-
-        <Navbar />
-
-        <SearchComponent />
-      </header>
 
       <div className="wrapper">
         {/* <p> {JSON.stringify(userInput.filteredProductsList, null, 2)}</p> */}
         {/* <hr /> */}
         {/* <p> {JSON.stringify(userInput.productsList, null, 2)}</p> */}
         <main className="products">
-          <form className="filters">
-            <div className="filter-options">
-              <NutsTypes />
+          <form
+            className="filters"
+            style={{ display: "grid", grid: "inherit", marginTop:'50px', marginBottom:'40px' }}
+          >
+            <div className="filter-options" style={{padding:'0px'}}>
               <WeightList filterHandler={filterHandler} />
-              <RatingFilter />
             </div>
             <SortFilter sortHandler={sortHandler} />
           </form>
 
-          <div className="grid-container" style={{ marginLeft: "10px" }}>
+          <div className="grid-container">
             {mappedProds}
           </div>
 
@@ -318,7 +298,7 @@ function Shop() {
           </div>
 
           <p
-            style={{ textAlign: "center", fontSize: "10px" }}
+            style={{ textAlign: "center", fontSize: "14px", cursor:"pointer" }}
             onClick={sorTestReset}
           >
             See all products
