@@ -50,6 +50,7 @@ function Cart() {
     <li>
       <p>{prod.product}</p>
       <p>Price: ${prod.price}</p>
+      <hr/>
     </li>
   ));
 
