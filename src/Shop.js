@@ -268,12 +268,7 @@ function Shop() {
 
   return (
     <React.Fragment>
-
-
       <div className="wrapper">
-        {/* <p> {JSON.stringify(userInput.filteredProductsList, null, 2)}</p> */}
-        {/* <hr /> */}
-        {/* <p> {JSON.stringify(userInput.productsList, null, 2)}</p> */}
         <main className="products">
           <form
             className="filters"
@@ -304,9 +299,7 @@ function Shop() {
             See all products
           </p>
         </main>
-      </div>
-
-      <div className="wrapper">
+ 
         <Footer />
       </div>
     </React.Fragment>

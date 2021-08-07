@@ -55,12 +55,14 @@ function Cart() {
   ));
 
   return (
-    <div className="wrapper">
-      {/* <p> {JSON.stringify(userInput.productsList, null, 2)}</p> */}
+    <React.Fragment>
+      <div className="wrapper">
+        {/* <p> {JSON.stringify(userInput.productsList, null, 2)}</p> */}
 
-      <h1>Cart</h1>
-      <ul>{mappedProds}</ul>
-    </div>
+        <h1>Cart</h1>
+        <ul>{mappedProds}</ul>
+      </div>
+    </React.Fragment>
   );
 }
 
